@@ -16,10 +16,9 @@ int  (*get_func(const char *format))(va_list)
 		{"s", print_string},
 		{"d", print_dec},
 		{"i", print_int},
-		{"u", print_unsig},
 		{"o", print_octal},
-		{"x", print_x},
-		{"X", print_X},
+		{"u", print_unsig},
+		{"R", print_rot13},
 		{NULL, NULL}
 	};
 	while (get_f[i].chr)
