@@ -11,7 +11,7 @@ int  (*get_func(const char *format))(va_list);
 int print_string(va_list s);
 int print_char(va_list s);
 /**
-  *struct  Special_chr - all special charectors
+  *struct special_chr - all special charectors
   *@chr: special charector
   *@f: function
   */
@@ -19,6 +19,6 @@ typedef struct special_chr
 {
 	char *chr;
 	int (*f)(va_list);
-}special_chr;
+} special_chr;
 
 #endif
