@@ -26,7 +26,7 @@ int _printf(const char *format, ...)
 		}
 		if (format[i] == '\0')
 			return (cprint);
-		f = find_function(&format[i + 1]);
+		f = get_func(&format[i + 1]);
 		if (f != NULL)
 		{
 			cprint += f(ap);
