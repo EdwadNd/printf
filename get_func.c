@@ -3,8 +3,8 @@
 #include <unistd.h>
 #include "main.h"
 /**
-  *get_fuc = finds the forment using a function
-  *@format: formet
+  *get_fuc = finds the format using a function
+  *@format: format
   * Return:function or NULL
   */
 
@@ -16,7 +16,10 @@ int  (*get_func(const char *format))(va_list)
 		{"s", print_string},
 		{"d", print_dec},
 		{"i", print_int},
-		{"b", print_binary},
+		{"u", print_unsig},
+		{"o", print_octal},
+		{"x", print_x},
+		{"X", print_X},
 		{NULL, NULL}
 	};
 	while (get_f[i].chr)
