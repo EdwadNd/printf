@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdarg.h>
 #include <unistd.h>
-
+#include "main.h"
 /**
   *get_fuc = finds the forment using a function
   *@format: formet
@@ -16,7 +16,7 @@ int  (*get_func(const char *format))(va_list)
 		{"s", print_string},
 		{NULL, NULL}
 	};
-	while (find[i].chr)
+	while (get_f[i].chr)
 	{
 	if (get_f[i].chr[0] == (*format))
 		return (get_f[i].f);
