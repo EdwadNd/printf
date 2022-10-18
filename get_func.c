@@ -16,6 +16,7 @@ int  (*get_func(const char *format))(va_list)
 		{"s", print_string},
 		{"d", print_dec},
 		{"i", print_int},
+		{"b", print_binary},
 		{NULL, NULL}
 	};
 	while (get_f[i].chr)
