@@ -46,3 +46,25 @@ int print_hex(unsigned int n, unsigned int c)
 	}
 	return (count);
 }
+
+/**
+  * print_x - takes an unsigned int an prints it in lowercase hex
+  * @x: unsigned int to print
+  * Descriptions: prints in lowercase hex with _putchar
+  * Return: size of the output
+  */
+int print_x(va_list x)
+{
+	return (print_hex(va_arg(x, unsigned int), 0));
+}
+/**
+  * print_X - takes an unsigned int an prints it in uppercase hex
+  * @X: unsigned int to print
+  * Descriptions: prints in uppercase hex with _putchar
+  * Return: size of the output
+  */
+int print_X(va_list X)
+{
+	return (print_hex(va_arg(X, unsigned int), 1));
+}
+
