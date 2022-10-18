@@ -14,8 +14,6 @@ int  (*get_func(const char *format))(va_list)
 	special_chr get_f[] = {
 		{"c", print_char},
 		{"s", print_string},
-		{"i", print_int},
-		{"d", print_dec},
 		{NULL, NULL}
 	};
 	while (get_f[i].chr)
