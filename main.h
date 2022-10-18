@@ -7,6 +7,7 @@
 int _putchar(char c);
 int _puts(char *str);
 int _printf(const char *format, ...);
+int print_char(va_list c);
 int  (*get_func(const char *format))(va_list);
 int print_string(va_list s);
 int print_char(va_list s);
